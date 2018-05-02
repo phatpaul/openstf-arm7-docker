@@ -19,6 +19,8 @@ services:
     adb:
         image: mitchtech/arm-adb
         privileged: true
+        volumes:
+            - /dev/bus/usb:/dev/bus/usb
         container_name: adb
         network_mode: host
 networks:
