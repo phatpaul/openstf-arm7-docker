@@ -5,8 +5,8 @@ After=docker.service
 
 [Service]
 Restart=always
-ExecStart=/usr/bin/docker-compose -f /home/pi/docker-compose.yml up
-ExecStop=/usr/bin/docker-compose -f /home/pi/docker-compose.yml stop
+ExecStart=/usr/bin/docker-compose -f /home/pi/openstf-arm7-docker/docker-compose.yml up
+ExecStop=/usr/bin/docker-compose -f /home/pi/openstf-arm7-docker/docker-compose.yml stop
 
 [Install]
 WantedBy=default.target
